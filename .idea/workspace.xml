@@ -36,7 +36,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CloudDisk" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -47,21 +47,31 @@
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GoProjects\src\myUtil" />
+      <recent name="D:\GoProjects\src\myUtil\PC\work" />
+      <recent name="D:\GoProjects\src\myUtil\layoutit" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GoProjects\src\myUtil\PC\work3" />
       <recent name="D:\GoProjects\src\myUtil\PC\work2" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GoProjects\src\myUtil\PC\work" />
-      <recent name="D:\GoProjects\src\myUtil\layoutit" />
-    </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build myUtil (1)">
+  <component name="RunManager" selected="Go Build.go build myUtil (4)">
     <configuration name="go build myUtil (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="util" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/casbin权限管理.go" />
+      <filePath value="$PROJECT_DIR$/文件下载io.Copy.go" />
+      <package value="myUtil" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build myUtil (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="util" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/文件下载http.ServeFile.go" />
       <package value="myUtil" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -70,7 +80,7 @@
       <module name="util" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/图片验证码.go" />
+      <filePath value="$PROJECT_DIR$/web上传下载速度限制.go" />
       <package value="myUtil" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -79,7 +89,7 @@
       <module name="util" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/dchest图形验证.go" />
+      <filePath value="$PROJECT_DIR$/断点续传.go" />
       <package value="myUtil" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -93,29 +103,20 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build myUtil" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="util" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/RSS订阅.go" />
-      <package value="myUtil" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Go Build.go build myUtil (1)" />
+      <item itemvalue="Go Build.go build myUtil (2)" />
       <item itemvalue="Go Build.go build myUtil (3)" />
       <item itemvalue="Go Build.go build myUtil (4)" />
       <item itemvalue="Go Build.go build myUtil (5)" />
-      <item itemvalue="Go Build.go build myUtil" />
-      <item itemvalue="Go Build.go build myUtil (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build myUtil (1)" />
-        <item itemvalue="Go Build.go build myUtil" />
-        <item itemvalue="Go Build.go build myUtil (5)" />
         <item itemvalue="Go Build.go build myUtil (4)" />
+        <item itemvalue="Go Build.go build myUtil (5)" />
         <item itemvalue="Go Build.go build myUtil (3)" />
+        <item itemvalue="Go Build.go build myUtil (2)" />
+        <item itemvalue="Go Build.go build myUtil (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -142,30 +143,30 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="451" y="207" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.920@0.0.1440.920" timestamp="1597134571465" />
-    <state x="431" y="156" key="#go_build_myUtil" timestamp="1598232687629">
+    <state x="431" y="156" key="#go_build_myUtil" timestamp="1598519164487">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="431" y="156" key="#go_build_myUtil/0.0.1440.920@0.0.1440.920" timestamp="1598232687629" />
-    <state x="431" y="156" key="#go_build_myUtil_(1)" timestamp="1598344718935">
+    <state x="431" y="156" key="#go_build_myUtil/0.0.1440.920@0.0.1440.920" timestamp="1598519164487" />
+    <state x="431" y="156" key="#go_build_myUtil_(1)" timestamp="1598527745580">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="431" y="156" key="#go_build_myUtil_(1)/0.0.1440.920@0.0.1440.920" timestamp="1598344718935" />
-    <state x="431" y="156" key="#go_build_myUtil_(2)" timestamp="1598191475415">
+    <state x="431" y="156" key="#go_build_myUtil_(1)/0.0.1440.920@0.0.1440.920" timestamp="1598527745580" />
+    <state x="431" y="156" key="#go_build_myUtil_(2)" timestamp="1598530818277">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="431" y="156" key="#go_build_myUtil_(2)/0.0.1440.920@0.0.1440.920" timestamp="1598191475415" />
-    <state x="431" y="156" key="#go_build_myUtil_(3)" timestamp="1598199729106">
+    <state x="431" y="156" key="#go_build_myUtil_(2)/0.0.1440.920@0.0.1440.920" timestamp="1598530818277" />
+    <state x="431" y="156" key="#go_build_myUtil_(3)" timestamp="1598537038204">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="431" y="156" key="#go_build_myUtil_(3)/0.0.1440.920@0.0.1440.920" timestamp="1598199729106" />
-    <state x="431" y="156" key="#go_build_myUtil_(4)" timestamp="1598200083266">
+    <state x="431" y="156" key="#go_build_myUtil_(3)/0.0.1440.920@0.0.1440.920" timestamp="1598537038204" />
+    <state x="431" y="156" key="#go_build_myUtil_(4)" timestamp="1598543289734">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="431" y="156" key="#go_build_myUtil_(4)/0.0.1440.920@0.0.1440.920" timestamp="1598200083266" />
-    <state x="430" y="157" key="#go_build_myUtil_(5)" timestamp="1598201418818">
+    <state x="431" y="156" key="#go_build_myUtil_(4)/0.0.1440.920@0.0.1440.920" timestamp="1598543289734" />
+    <state x="430" y="157" key="#go_build_myUtil_(5)" timestamp="1598543531370">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="430" y="157" key="#go_build_myUtil_(5)/0.0.1440.920@0.0.1440.920" timestamp="1598201418818" />
+    <state x="430" y="157" key="#go_build_myUtil_(5)/0.0.1440.920@0.0.1440.920" timestamp="1598543531370" />
     <state x="442" y="164" key="#go_build_util" timestamp="1597025476107">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -174,26 +175,26 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="431" y="156" key="#go_build_util_(1)/0.0.1440.920@0.0.1440.920" timestamp="1597025577250" />
-    <state x="501" y="215" key="FileChooserDialogImpl" timestamp="1598192148723">
+    <state x="501" y="215" key="FileChooserDialogImpl" timestamp="1598579574280">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="501" y="215" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1598192148723" />
-    <state width="1382" height="364" key="GridCell.Tab.0.bottom" timestamp="1598344838718">
+    <state x="501" y="215" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1598579574280" />
+    <state width="1382" height="624" key="GridCell.Tab.0.bottom" timestamp="1598584290406">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="364" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1598344838718" />
-    <state width="1382" height="364" key="GridCell.Tab.0.center" timestamp="1598344838718">
+    <state width="1382" height="624" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1598584290406" />
+    <state width="1382" height="624" key="GridCell.Tab.0.center" timestamp="1598584290405">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="364" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1598344838718" />
-    <state width="1382" height="364" key="GridCell.Tab.0.left" timestamp="1598344838718">
+    <state width="1382" height="624" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1598584290405" />
+    <state width="1382" height="624" key="GridCell.Tab.0.left" timestamp="1598584290405">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="364" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1598344838718" />
-    <state width="1382" height="364" key="GridCell.Tab.0.right" timestamp="1598344838718">
+    <state width="1382" height="624" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1598584290405" />
+    <state width="1382" height="624" key="GridCell.Tab.0.right" timestamp="1598584290406">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1382" height="364" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1598344838718" />
+    <state width="1382" height="624" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1598584290406" />
     <state width="1382" height="297" key="GridCell.Tab.1.bottom" timestamp="1597998629832">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -214,9 +215,9 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="222" y="103" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1598192155109" />
-    <state x="383" y="195" width="672" height="678" key="search.everywhere.popup" timestamp="1597998501913">
+    <state x="383" y="195" width="672" height="678" key="search.everywhere.popup" timestamp="1598348960172">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="383" y="195" width="672" height="678" key="search.everywhere.popup/0.0.1440.920@0.0.1440.920" timestamp="1597998501913" />
+    <state x="383" y="195" width="672" height="678" key="search.everywhere.popup/0.0.1440.920@0.0.1440.920" timestamp="1598348960172" />
   </component>
 </project>

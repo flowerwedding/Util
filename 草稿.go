@@ -6,14 +6,3 @@
  **/
 package main
 
-import (
-	"github.com/gin-gonic/gin"
-	"myUtil/captcha/controller"
-)
-func main() {
-	r := gin.Default()
-	r.GET("/getCaptcha",controller.GetCaptcha)
-	r.GET("/verifyCaptcha", controller.VerifyCaptcha)
-	r.GET("/show/:source", controller.GetCaptchaPng)
-	_ = r.Run(":8080")
-}

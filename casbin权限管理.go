@@ -15,7 +15,10 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
+//没有返回json，信息不该打印在控制台
+//拦截器里面的sub，通过配置文件设置全局变量
 func main() {
+
 	// 要使用自己定义的数据库rbac_db,最后的true很重要.默认为false,使用缺省的数据库名casbin,不存在则创建
 	a := xormadapter.NewAdapter("mysql", "root:@tcp(127.0.0.1:3306)/dome7?charset=utf8mb4", true)
 
@@ -27,7 +30,7 @@ func main() {
 	//获取router路由对象
 	r := gin.New()
 
-	r.POST("/api/v1/add", func(c *gin.Context) {
+	r.POST("/api/v1/add",Authorize("charge",e), func(c *gin.Context) {
 		fmt.Println("增加Policy")
 		if ok := e.AddPolicy("admin", "/api/v1/hello", "GET"); !ok {
 			fmt.Println("Policy已经存在")
@@ -36,7 +39,7 @@ func main() {
 		}
 	})
 	//删除policy
-	r.DELETE("/api/v1/delete", func(c *gin.Context) {
+	r.DELETE("/api/v1/delete",Authorize("charge",e), func(c *gin.Context) {
 		fmt.Println("删除Policy")
 		if ok := e.RemovePolicy("admin", "/api/v1/hello", "GET"); !ok {
 			fmt.Println("Policy不存在")
@@ -45,7 +48,7 @@ func main() {
 		}
 	})
 	//获取policy
-	r.GET("/api/v1/get", func(c *gin.Context) {
+	r.GET("/api/v1/get",Authorize("charge",e), func(c *gin.Context) {
 		fmt.Println("查看policy")
 		list := e.GetPolicy()
 		for _, vlist := range list {
@@ -55,7 +58,7 @@ func main() {
 		}
 	})
 	//使用自定义拦截器中间件
-	r.Use(Authorize(e))
+	r.Use(Authorize("admin",e))
 	//创建请求
 	r.GET("/api/v1/hello", func(c *gin.Context) {
 		fmt.Println("Hello 接收到GET请求..")
@@ -65,7 +68,7 @@ func main() {
 }
 
 //拦截器
-func Authorize(e *casbin.Enforcer) gin.HandlerFunc {
+func Authorize(sub string,e *casbin.Enforcer) gin.HandlerFunc {
 
 	return func(c *gin.Context) {
 
@@ -74,7 +77,6 @@ func Authorize(e *casbin.Enforcer) gin.HandlerFunc {
 		//获取请求方法
 		act := c.Request.Method
 		//获取用户的角色
-		sub := "admin"
 
 		//判断策略中是否存在
 		if ok := e.Enforce(sub, obj, act); ok {

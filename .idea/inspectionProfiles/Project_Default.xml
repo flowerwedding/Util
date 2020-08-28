@@ -16,6 +16,8 @@
         <method importPath="net" receiver="Conn" name="Close" />
         <method importPath="github.com/streadway/amqp" receiver="*Connection" name="Close" />
         <method importPath="github.com/streadway/amqp" receiver="*Channel" name="Close" />
+        <method importPath="os" receiver="*File" name="Close" />
+        <method importPath="io" receiver="ReadCloser" name="Close" />
       </methods>
     </inspection_tool>
   </profile>
